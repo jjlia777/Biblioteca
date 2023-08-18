@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(font/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url(font/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url(font/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSans Bold';
+    src: url(font/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(font/Roboto-Regular.ttf);
+}
+
+
+/* RESET CSS */
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* FIM RESET CSS */
+
+header {
+    background-color: #545454;
+    display: flex;
+}
+
+.logo {
+   margin: -30px;
+    width: 180px;
+}
+
+.titulo {
+    font: 400 40px 'Poppins Bold', sans-serif;
+    margin-left: 50px;
+    margin-top: 30px;
+    color: white;
+}
+
+body {
+    background-color: #454040
+}
+
+.painel {
+    height: 150px;
+}
+
+.container {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin: 0 170px;
+    flex-wrap: wrap;
+}
+
+.caixa {
+    background-color: #eeebeb;
+    height: 800px;
+}
+
+.cadastrotit {
+    font: 200 32px 'Poppins Bold', sans-serif;
+    color: #545454;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.tit {
+    display: flex;
+    
+}
+
+.linha {
+    background-color: #545454;
+    height: 1px;
+    margin-bottom: 5px;
+}
+
+.sub {
+    margin-bottom: 5px;
+    margin-top: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font: 200 32px 'Poppins Bold', sans-serif;
+}
+
+.texto {
+    font: 200 22px 'Roboto', sans-serif;
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 30px;
+}
+
+.form {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#nomeLivro {
+    padding: 15px 70px;
+    border-radius: 10px;
+}
+
+#autorLivro {
+    padding: 15px 40px;
+    border-radius: 10px;
+}
+
+#anoLivro {
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+::placeholder {
+    font-family: 'Poppins';
+}
+
+input {
+    padding: 25px 150px;
+}
+
+button {
+    font: 500 15px 'Poppins';
+    color: white;
+    margin-top: 20px;
+    background-color: #545454;
+    border-radius: 30px;
+    padding: 12px 25px;
+}
+
+button:hover {
+    background-color: #545454b0;
+    color: #f2e9ff;
+    cursor: pointer;
+}
+
+.livrinho {
+    width: 50px;
+    height: 50px; 
+    
+}
+
+.numeros {
+    display: flex;
+    justify-content: center;
+}
+
+.numero {
+    color: #545454;
+    margin-left: 5px;
+    margin-top: 8px;
+    font: 800 25px 'Poppins';
+}
+
+
+

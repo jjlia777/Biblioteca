@@ -1,62 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6d874d2059.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
     <header>
-    <div class="fundo">
-        <img src="img/BIBLIOTECA-removebg-preview.png" alt="">
-    </div>
+        <img src="img/BIBLIOTECA-removebg-preview.png" class="logo" alt="">
+        <h1 class="titulo">Biblioteca da Meia-Noite</h1>
     </header>
-    <h1>Cadastro de livros</h1>
+
+    <main>
+        <img class="painel" src="img/biblioteca 0000 (1) (1).png" alt="">
+        <h2 class="sub">Encontre seus livros favoritos aqui!</h2>
+        <div class="linha"></div>
+        <div class="container">
+            <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut provident aliquid libero esse explicabo vero, nisi saepe non accusamus. Autem odio, soluta exercitationem sint error quia porro doloremque labore dolore?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, atque nemo, quam reiciendis labore obcaecati ad ipsam nihil sequi, rerum magnam. Deserunt dolores, dolor libero velit ab accusamus. Ratione, unde?</p>
+        </div>
+        <div class="tudo">
+            <div class="caixa">
+                <h1 class="cadastrotit">Cadastro de livros</h1>
+                    <div class="numeros">
+                        <img class="livrinho" src="img/livro.png" alt="">
+                        <p id="numero" class="numero"></p>
+                    </div>
+                <div class="form">
+                    <div class="inputs">
+                        <input placeholder="Nome" type="text" id="nomeLivro">
+                        <input placeholder="Autor" type="text" id="autorLivro">
+                        <input placeholder="Ano" type="number" id="anoLivro">
+                    </div>
+                    <button onclick="adicionar()">Adicionar Livro</button>
+                    <button onclick="mostrarLivros()">Mostrar</button>
+                    <button onclick="apagarLivros()">Apagar registro</button>
+                </div>
+            </div>
+        </div>
 
 
+    </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <input placeholder="Nome" type="text" id="nomeLivro">
-    <input placeholder="Autor" type="text" id="autorLivro">
-    <input placeholder="Ano" type="number" id="anoLivro">
-    <button onclick="adicionar()">Adicionar Livro</button>
-    <button onclick="mostrarLivros()">Mostrar</button>
     <script>
 
-        let biblioteca = [];
+        // let biblioteca = [];
 
-        function cadastro(nome, autor, ano) {
-            var livro = {
-                titulo: nome,
-                autor: autor, 
-                ano: ano
-            };
-            biblioteca.push(livro)
-        }
-        function adicionar() {
-            let nome = document.getElementById('nomeLivro').value;
-            let autor = document.getElementById('autorLivro').value;
-            let ano = document.getElementById('anoLivro').value;
-            cadastro(nome, autor, ano);
-        }
-        function mostrarLivros() {
-            console.log(`resultado:${biblioteca[0].titulo}`);
-        }
-    </script>
+        // function cadastro(nome, autor, ano) {
+        //     var livro = {
+        //         titulo: nome,
+        //         autor: autor, 
+        //         ano: ano
+        //     };
+        //     biblioteca.push(livro)
+        // }
+        // function adicionar() {
+        //     let nome = document.getElementById('nomeLivro').value;
+        //     let autor = document.getElementById('autorLivro').value;
+        //     let ano = document.getElementById('anoLivro').value;
+        //     cadastro(nome, autor, ano);
+        // }
+        // function mostrarLivros() {
+        //     console.log(`resultado:${biblioteca[0].titulo}`);
+        // }
+    </script> 
 </body>
 </html>
