@@ -3,67 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midnight reader</title>
+    <link rel="icon" href="livro.png">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/6d874d2059.js" crossorigin="anonymous"></script>
-    <title>Document</title>
 </head>
 <body>
-    <header>
-        <img src="img/BIBLIOTECA-removebg-preview.png" class="logo" alt="">
-        <h1 class="titulo">Biblioteca da Meia-Noite</h1>
+    <header id="header">
+        <div class="container">
+            <div class="head">
+                <img src="logo.png" alt="" class="logo">
+                <h1>MIDNIGHT BOOKS</h1>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <img class="painel" src="img/biblioteca 0000 (1) (1).png" alt="">
-        <h2 class="sub">Encontre seus livros favoritos aqui!</h2>
-        <div class="linha"></div>
-        <div class="container">
-            <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut provident aliquid libero esse explicabo vero, nisi saepe non accusamus. Autem odio, soluta exercitationem sint error quia porro doloremque labore dolore?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, atque nemo, quam reiciendis labore obcaecati ad ipsam nihil sequi, rerum magnam. Deserunt dolores, dolor libero velit ab accusamus. Ratione, unde?</p>
+    <main id="main">
+        <div class="painel">
+            <img src="book.jpg" alt="">
+        </div>
+        <div class="texto">
+            <div class="container">
+                <div class="conteudo">
+                    <h2>Encontre seus livros favoritos aqui!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam maiores neque eligendi veritatis ad ea temporibus fugiat est, sed magni tenetur! Odio tempore dignissimos praesentium consectetur laborum blanditiis totam neque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore maiores nobis dolores, excepturi eum odio assumenda adipisci, obcaecati quaerat ex, omnis reiciendis alias vitae nisi eveniet maxime quae aut neque.</p>
+                </div>
+            </div>
         </div>
         <div class="tudo">
-            <div class="caixa">
-                <h1 class="cadastrotit">Cadastro de livros</h1>
+            <div class="container">
+                <div class="caixa">
+                    <h1>Cadastro de livros</h1>
                     <div class="numeros">
-                        <img class="livrinho" src="img/livro.png" alt="">
-                        <p id="numero" class="numero"></p>
+                        <img src="livro.png" alt="" class="livrinho">
                     </div>
-                <div class="form">
-                    <div class="inputs">
-                        <input placeholder="Nome" type="text" id="nomeLivro">
-                        <input placeholder="Autor" type="text" id="autorLivro">
-                        <input placeholder="Ano" type="number" id="anoLivro">
+                    <div class="form">
+                        <div class="inputs">
+                            <input placeholder="Nome" type="text" id="nomeLivro">
+                            <input placeholder="Autor" type="text" id="autorLivro">
+                            <input placeholder="Ano" type="number" id="anoLivro">
+                        </div>
+                        <div class="bts">
+                            <button onclick="adicionar()">Adicionar Livro</button>
+                            <button onclick="mostrarLivros()">Mostrar</button>
+                            <button onclick="apagarLivros()">Apagar registro</button>
+                        </div>
+                        <p id="mensagem"></p>
                     </div>
-                    <button onclick="adicionar()">Adicionar Livro</button>
-                    <button onclick="mostrarLivros()">Mostrar</button>
-                    <button onclick="apagarLivros()">Apagar registro</button>
                 </div>
             </div>
         </div>
 
-
+        <div class="acao">
+            <div class="carrossel">
+                <img src="" alt="Imagem do Carrossel" id="carrosselImagem">
+            </div>
+            <div class="botao">
+                <button id="anterior"><</button>
+                <button id="proximo">></button>
+            </div>
+        </div>
     </main>
 
-    <script>
+    <footer id="footer">
+        <h1>Midnight books</h1>
+    </footer>
 
-        // let biblioteca = [];
-
-        // function cadastro(nome, autor, ano) {
-        //     var livro = {
-        //         titulo: nome,
-        //         autor: autor, 
-        //         ano: ano
-        //     };
-        //     biblioteca.push(livro)
-        // }
-        // function adicionar() {
-        //     let nome = document.getElementById('nomeLivro').value;
-        //     let autor = document.getElementById('autorLivro').value;
-        //     let ano = document.getElementById('anoLivro').value;
-        //     cadastro(nome, autor, ano);
-        // }
-        // function mostrarLivros() {
-        //     console.log(`resultado:${biblioteca[0].titulo}`);
-        // }
-    </script> 
+    <script src="script.js"></script>
 </body>
 </html>

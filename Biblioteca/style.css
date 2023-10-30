@@ -1,35 +1,12 @@
-@font-face {
-    font-family: 'Poppins';
-    src: url(font/Poppins-Regular.ttf);
-}
-
-@font-face {
-    font-family: 'Poppins Bold';
-    src: url(font/Poppins-Bold.ttf);
-}
-
-@font-face {
-    font-family: 'OpenSans';
-    src: url(font/OpenSans-Regular.ttf);
-}
-
-@font-face {
-    font-family: 'OpenSans Bold';
-    src: url(font/OpenSans-Bold.ttf);
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url(font/Roboto-Regular.ttf);
-}
-
-
-/* RESET CSS */
 * {
     margin: 0;
     border: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 img {
@@ -41,139 +18,172 @@ a {
     text-decoration: none;
 }
 
-/* FIM RESET CSS */
-
-header {
-    background-color: #545454;
-    display: flex;
-}
-
-.logo {
-   margin: -30px;
-    width: 180px;
-}
-
-.titulo {
-    font: 400 40px 'Poppins Bold', sans-serif;
-    margin-left: 50px;
-    margin-top: 30px;
-    color: white;
-}
-
-body {
-    background-color: #454040
-}
-
-.painel {
-    height: 150px;
-}
 
 .container {
     justify-content: space-between;
     display: flex;
     align-items: center;
-    margin: 0 170px;
-    flex-wrap: wrap;
+    margin: 0 150px;
 }
 
-.caixa {
-    background-color: #eeebeb;
-    height: 800px;
+
+#header {
+    background-color: rgb(72, 72, 124);
+    height: 200px;
 }
 
-.cadastrotit {
-    font: 200 32px 'Poppins Bold', sans-serif;
-    color: #545454;
-    padding-top: 20px;
-    text-align: center;
+#header img {
+    width: 190px;
 }
 
-.tit {
+.head {
     display: flex;
-    
+    align-items: center;
 }
 
-.linha {
-    background-color: #545454;
-    height: 1px;
-    margin-bottom: 5px;
+.head h1 {
+    color: white;
+    font: 600 50px 'Poppins', sans-serif;
 }
 
-.sub {
-    margin-bottom: 5px;
-    margin-top: 15px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font: 200 32px 'Poppins Bold', sans-serif;
+.painel img {
+    height: 350px;
+    object-fit: cover ;
+    border-top: white 5px solid;
+    border-bottom: white 2px solid;
 }
 
 .texto {
-    font: 200 22px 'Roboto', sans-serif;
-    text-align: center;
-    color: aliceblue;
-    margin-bottom: 30px;
+    background-color: rgba(98, 91, 124, 0.877);
+    height: 230px;
 }
 
-.form {
-    margin-top: 40px;
+.conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.conteudo h2 {
+    color: rgb(0, 0, 0);
+    font: 450 35px 'Poppins', sans-serif;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-bottom: rgb(0, 0, 0) 2px solid;
+} 
+
+.conteudo p {
     text-align: center;
+    font: 400 20px 'Poppins', sans-serif;
+}
+
+.tudo {
+    background-color: rgb(202, 202, 199);
+    display: flex;
+    justify-content: center;
+}
+
+.caixa h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(27, 36, 75);
+    font: 700 42px 'Poppins', sans-serif;
+    border-bottom: rgb(32, 37, 88) 2px solid;
+}
+
+.livrinho {
+    width: 50px;
+}
+
+.numeros {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#quantidadeLivros {
+    font: 500 27px 'Poppins', sans-serif;
 }
 
 #nomeLivro {
-    padding: 15px 70px;
+    padding: 15px 50px;
     border-radius: 10px;
 }
 
 #autorLivro {
-    padding: 15px 40px;
+    padding: 15px 50px;
     border-radius: 10px;
 }
 
 #anoLivro {
-    padding: 15px 20px;
+    padding: 15px 50px;
     border-radius: 10px;
 }
 
-::placeholder {
-    font-family: 'Poppins';
+input {
+    margin-left: 20px;
 }
 
-input {
-    padding: 25px 150px;
+.form {
+    margin-top: 20px;
+    text-align: center;
 }
 
 button {
-    font: 500 15px 'Poppins';
+    font: 500 15px 'Poppins', sans-serif;
     color: white;
     margin-top: 20px;
-    background-color: #545454;
+    background-color: #2e2b50;
     border-radius: 30px;
     padding: 12px 25px;
 }
 
 button:hover {
-    background-color: #545454b0;
+    background-color: #6a729e;
     color: #f2e9ff;
     cursor: pointer;
 }
 
-.livrinho {
-    width: 50px;
-    height: 50px; 
-    
-}
-
-.numeros {
+.carrossel {
     display: flex;
     justify-content: center;
 }
 
-.numero {
-    color: #545454;
-    margin-left: 5px;
-    margin-top: 8px;
-    font: 800 25px 'Poppins';
+.carrossel img {
+    margin-top: 30px;
+    width: 240px;
+    border-radius: 15px;
 }
 
+.carrossel button {
+    height: 50px;
+}
 
+.acao {
+    background-color: rgb(202, 202, 199);
+    padding-bottom: 50px;
+}
 
+.botao {
+    text-align: center;
+}
+
+#mensagem {
+    margin-top: 17px;
+    font: 500 17px 'Poppins', sans-serif;
+}
+
+#footer {
+    background-color: rgb(72, 72, 124);
+    height: 140px;
+    padding-top: 100px;
+}
+
+#footer h1 {
+    color: white;
+    font: 500 25px 'Poppins', sans-serif;
+    text-align: center;
+    border-bottom: rgba(150, 150, 150, 0.795) 0.5px solid;
+}
